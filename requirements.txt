@@ -1,0 +1,42 @@
+# Core Dependencies
+modal
+openai
+python-dotenv
+
+# ML and AI
+torch
+transformers
+bitsandbytes
+accelerate
+peft
+sentence-transformers
+scikit-learn
+joblib
+
+# Data Processing
+numpy
+pandas
+datasets
+
+# Vector Database
+chromadb
+
+# Web Scraping
+beautifulsoup4
+feedparser
+requests
+
+# UI
+gradio
+
+# Messaging (optional)
+twilio
+
+# Testing and Visualization
+tqdm
+matplotlib
+
+# Jupyter
+jupyter
+notebook
+ipykernel

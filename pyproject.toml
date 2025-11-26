@@ -1,0 +1,77 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deal-hunter-ai"
+version = "1.0.0"
+description = "An autonomous deal-hunting agentic AI system using ensemble ML models"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+keywords = ["ai", "llm", "agents", "machine-learning", "deals", "price-estimation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+dependencies = [
+    "modal",
+    "openai",
+    "python-dotenv",
+    "torch",
+    "transformers",
+    "bitsandbytes",
+    "accelerate",
+    "peft",
+    "sentence-transformers",
+    "scikit-learn",
+    "joblib",
+    "numpy",
+    "pandas",
+    "datasets",
+    "chromadb",
+    "beautifulsoup4",
+    "feedparser",
+    "requests",
+    "gradio",
+    "twilio",
+    "tqdm",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyter",
+    "notebook",
+    "ipykernel",
+    "pytest",
+    "black",
+    "flake8",
+    "mypy",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/deal-hunter-ai"
+Documentation = "https://github.com/yourusername/deal-hunter-ai#readme"
+Repository = "https://github.com/yourusername/deal-hunter-ai"
+"Bug Tracker" = "https://github.com/yourusername/deal-hunter-ai/issues"
+
+[project.scripts]
+price-is-right = "price_is_right:main"
+
+[tool.setuptools]
+packages = ["agents"]
+
+[tool.setuptools.package-data]
+"*" = ["*.pkl", "*.json"]

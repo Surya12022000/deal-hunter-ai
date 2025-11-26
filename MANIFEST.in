@@ -1,0 +1,21 @@
+include README.md
+include requirements.txt
+include pyproject.toml
+include setup.py
+
+recursive-include agents *.py
+include agents/__init__.py
+
+include *.py
+include *.pkl
+include memory.json
+
+exclude *.pyc
+exclude __pycache__
+exclude .DS_Store
+exclude .env
+
+global-exclude *.py[cod]
+global-exclude __pycache__
+global-exclude *.so
+global-exclude .DS_Store
