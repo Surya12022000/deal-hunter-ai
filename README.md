@@ -198,10 +198,6 @@ Community contributions are welcome! See the `community_contributions/` folder f
 - Alternative deployment strategies
 - UI improvements
 
-## License
-
-MIT License
-
 ## Acknowledgments
 
 Built as part of LLM Engineering Week 8 coursework.
